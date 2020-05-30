@@ -1,8 +1,12 @@
 import React from 'react';
-const markdownIt = require('markdown-it')('commonmark').use(require('markdown-it-div'));
+const markdownIt = require('markdown-it')({
+    typographer: true,
+    html: true,
+}).use(require('markdown-it-div'));
 
-type DocProps = {
+type MarkdownDocProps = {
     source: string
 }
 
-export const Doc = ({ source }: DocProps) => <div dangerouslySetInnerHTML={{ __html: markdownIt.render(source) }} />
+export const MarkdownDoc = ({ source }: MarkdownDocProps) =>
+    <div dangerouslySetInnerHTML={{ __html: markdownIt.render(source) }} />

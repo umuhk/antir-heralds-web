@@ -3,32 +3,40 @@ import {
   HashRouter as Router,
   Switch,
   Route,
-} from "react-router-dom";
-import MenuBar from './MenuBar'
+} from 'react-router-dom';
+import Container from 'react-bootstrap/Container'
+import Paths from './Paths';
+import MenuBar from './MenuBar';
+import Documents from './Documents'
 import logo from './black-lion-seal-red-trumpets.png';
 import './App.css';
+
 
 function App() {
   return (
     <Router>
       <MenuBar />
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            An Tir College of Heralds
-          </p>
-        </header>
-      </div>
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/documents">
-          <Documents />
-        </Route>
-      </Switch>
-    </Router>
+      <Container fluid='md'>
+        <Switch>
+          <Route exact path={Paths.HOME} component={Home} />
+          <Route path={Paths.ABOUT} component={About} />
+          <Route path={Paths.DOCUMENTS + '/:filename'} component={Documents} />
+        </Switch>
+      </Container>
+    </Router >
+  );
+}
+
+function Home() {
+  return (
+    <div className='App'>
+      <header className='App-header'>
+        <img src={logo} className='App-logo' alt='Black Lion Seal' />
+        <p>
+          An Tir College of Heralds
+        </p>
+      </header>
+    </div>
   );
 }
 
@@ -36,14 +44,6 @@ function About() {
   return (
     <div>
       <h2>About</h2>
-    </div>
-  );
-}
-
-function Documents() {
-  return (
-    <div>
-      <h2>Documents</h2>
     </div>
   );
 }

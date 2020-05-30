@@ -1,3 +1,7 @@
+body {
+  background: White url(/xv.png) fixed;
+}
+
 .App {
   text-align: center;
 }
