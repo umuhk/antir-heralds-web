@@ -25,3 +25,9 @@ body {
 .App-link {
   color: #61dafb;
 }
+
+.document {
+  padding: 2em;
+  background-color: whitesmoke;
+  border: 2px solid saddlebrown;
+}

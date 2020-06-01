@@ -1,13 +1,13 @@
 import React from 'react';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
 import Container from 'react-bootstrap/Container'
 import Paths from './Paths';
 import MenuBar from './MenuBar';
-import Documents from './Documents'
+import Document from './Document'
 import logo from './black-lion-seal-red-trumpets.png';
 import './App.css';
 
@@ -20,7 +20,7 @@ function App() {
         <Switch>
           <Route exact path={Paths.HOME} component={Home} />
           <Route path={Paths.ABOUT} component={About} />
-          <Route path={Paths.DOCUMENTS + '/:filename'} component={Documents} />
+          <Route path={Paths.DOCUMENTS + '/:filename'} component={Document} />
         </Switch>
       </Container>
     </Router >

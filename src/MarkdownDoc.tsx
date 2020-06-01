@@ -9,4 +9,4 @@ type MarkdownDocProps = {
 }
 
 export const MarkdownDoc = ({ source }: MarkdownDocProps) =>
-    <div dangerouslySetInnerHTML={{ __html: markdownIt.render(source) }} />
+    <div className='document' dangerouslySetInnerHTML={{ __html: markdownIt.render(source) }} />
