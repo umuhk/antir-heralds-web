@@ -8,7 +8,14 @@ type DocumentProps = {
   filename: string
 }
 
+type IndexRecord = {
+  title: string,
+  path: string
+}
+
 type DocumentState = {
+  index: boolean,
+  records: IndexRecord[],
   source: string
 }
 
@@ -16,23 +23,33 @@ export default class Document extends Component<RouteComponentProps<DocumentProp
   constructor(props: RouteComponentProps<DocumentProps>) {
     super(props)
     this.state = {
+      index: !(this.props.match.params.filename),
+      records: [],
       source: ''
     };
   }
 
   componentDidMount() {
-    window.fetch('/documents/reference/' + this.props.match.params.filename + '.md')
+    if (this.state.index) {
+      window.fetch('/documents/index.csv')
       .then(response => response.text())
-      .then(text => this.setState({
-        source: text
-      }));
+      .then(text => {
+      });
+  } else {
+      window.fetch('/documents/reference/' + this.props.match.params.filename + '.md')
+        .then(response => response.text())
+        .then(text => this.setState({ source: text }));
+    }
   }
 
   render() {
     return (
       <Row>
         <Col>
-          <MarkdownDoc source={this.state.source} />
+          { this.state.index 
+          ? <ul>{this.state.records.map((record: IndexRecord) => <li>{record}</li>)}</ul>
+          : <MarkdownDoc source={this.state.source} />
+          }
         </Col>
       </Row>
     );

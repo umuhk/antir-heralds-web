@@ -20,7 +20,7 @@ function App() {
         <Switch>
           <Route exact path={Paths.HOME} component={Home} />
           <Route path={Paths.ABOUT} component={About} />
-          <Route path={Paths.DOCUMENTS + '/:filename'} component={Document} />
+          <Route exact path={[Paths.DOCUMENTS, Paths.DOCUMENTS + '/:filename']} component={Document} />
         </Switch>
       </Container>
     </Router >
