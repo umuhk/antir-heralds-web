@@ -5,11 +5,14 @@ import {
   Route,
 } from 'react-router-dom';
 import Container from 'react-bootstrap/Container'
+
 import Paths from './Paths';
 import MenuBar from './MenuBar';
 import Document from './Document'
 import logo from './black-lion-seal-red-trumpets.png';
-import './App.css';
+
+import '@fortawesome/fontawesome-free/css/solid.css';
+import './App.scss';
 
 
 function App() {

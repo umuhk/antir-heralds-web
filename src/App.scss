@@ -1,0 +1,102 @@
+$argent: #f9f8d9ff;
+$gules: #b00300ff;
+$vert: #4b870cff;
+$Or: #f9c93aff;
+$azure: #086e8bff;
+$purpure: #984373ff;
+$lightGrey: #978a7aff;
+$darkGrey: #5b5754ff;
+$sable: #343434ff;
+
+body {
+  background: $argent url(/xv.png) fixed;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: $sable;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $argent;
+}
+
+.App-link {
+  color: $azure;
+}
+
+.document {
+  padding: 2em;
+  background-color: $argent;
+  border: 2px solid $darkGrey;
+}
+
+.resources {
+  background: inherit;
+  color: $sable;
+  padding: 0.25rem 0rem;
+  margin-left: 2.25rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  position: relative;
+  border-left: 0.125rem solid $azure;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.resources>ul {
+  margin-bottom: 0rem;
+}
+
+.resources:before {
+  position: absolute;
+  top: 0px;
+  left: -3.25rem;
+  font-weight: normal;
+  font-size: 2rem;
+  padding-right: 1rem;
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem; /* Preferred icon size */
+  content: "\f518";
+  color: $azure;
+}
+
+.tip {
+  background: inherit;
+  color: $sable;
+  padding: 0.25rem 0rem;
+  margin-left: 2.25rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  position: relative;
+  border-left: 0.125rem solid $vert;
+}
+
+.tip>ul {
+  margin-bottom: 0rem;
+}
+
+.tip:before {
+  position: absolute;
+  top: 0px;
+  left: -3.25rem;
+  font-weight: normal;
+  font-size: 2rem;
+  padding-right: 1rem;
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem; /* Preferred icon size */
+  content: "\f058";
+  color: $vert;
+}

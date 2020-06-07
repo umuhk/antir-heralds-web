@@ -4,34 +4,30 @@ Heraldry in the SCA is a very broad subject, encompassing:
 
 * __Armory:__ devices, arms, and badges, their design and their display -- flags, achievements, regalia, and heraldic garb
 ::: .resources
->   * [Heraldry for Non-Heralds](http://heraldry.sca.org/armory/newprimer/)
->   * [What is an SCA Heraldic Device?](http://heraldry.sca.org/armory/whatis/device.html)
->   * [What is an SCA Heraldic Badge?](http://heraldry.sca.org/armory/whatis/badge.html)
->   * [A Grammar of Blazonry](http://heraldry.sca.org/armory/bruce.html)
+  * [Heraldry for Non-Heralds](http://heraldry.sca.org/armory/newprimer/)
+  * [What is an SCA Heraldic Device?](http://heraldry.sca.org/armory/whatis/device.html)
+  * [What is an SCA Heraldic Badge?](http://heraldry.sca.org/armory/whatis/badge.html)
+  * [A Grammar of Blazonry](http://heraldry.sca.org/armory/bruce.html)
 :::
 * __Onomastics:__ the study of naming practices across various cultures, including names of people, places, and groups
 ::: .resources
-> * [What is an SCA Name?](http://heraldry.sca.org/armory/whatis/name.html)
-> * [A Brief Introduction to the History of Names](http://heraldry.sca.org/names/namehist.html)
+  * [What is an SCA Name?](http://heraldry.sca.org/armory/whatis/name.html)
+  * [A Brief Introduction to the History of Names](http://heraldry.sca.org/names/namehist.html)
 :::
 * __Ceremony:__ the creation and execution of ritual, oaths, and ceremonies -- Court in particular
-
 ::: .resources
-> * [An Tir Ceremonial][ceremonial]
-> * [Philosophy of Court Heraldry](http://heraldry.sca.org/voice/philosophyonherald.html)
-> * [Some Vocal Techniques as Applied to Field and Court Heraldry](http://heraldry.sca.org/voice/vocaltech.html)
-> * [Laurel website, Sign Heraldry section](http://heraldry.sca.org/signheraldry.html)
+  * [An Tir Ceremonial][ceremonial]
+  * [Philosophy of Court Heraldry](http://heraldry.sca.org/voice/philosophyonherald.html)
+  * [Some Vocal Techniques as Applied to Field and Court Heraldry](http://heraldry.sca.org/voice/vocaltech.html)
+  * [Laurel website, Sign Heraldry section](http://heraldry.sca.org/signheraldry.html)
 :::
-
 * __Announcements:__ infamously, morning cries, but also acting as messengers and ambassadors
 * __Protocol:__ titles, forms of address, sumptuary customs, and precedence
-
 ::: .resources
-> * [An Tir Circlet Conventions](/document/view/reference/circlets)
-> * [An Tir Order of Precedence](https://op.antirheralds.org)
-> * [List of Alternate Titles](http://heraldry.sca.org/titles.html)
+  * [An Tir Circlet Conventions](/document/view/reference/circlets)
+  * [An Tir Order of Precedence](https://op.antirheralds.org)
+  * [List of Alternate Titles](http://heraldry.sca.org/titles.html)
 :::
-
 * __History:__ History of heralds and heraldry, the evolution of heraldic law and philosophy (Sassoferrato, Upton, etc), from which SCA heraldry is adapted
 
 It is important to appreciate how vast heraldry is: just a portion of it can provide years of rewarding service and education.  As a result, many heralds tend to specialize:  voice or book, though all are encouraged to develop an appreciation of the other aspects of our activity, and perhaps some proficiency as interest and ability allows.  We also tend to network with our colleagues across the Society and in the modern world, pooling our knowledge.
