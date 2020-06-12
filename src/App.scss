@@ -1,18 +1,24 @@
-$argent: #f9f8d9ff;
-$gules: #b00300ff;
-$vert: #4b870cff;
-$Or: #f9c93aff;
-$azure: #086e8bff;
-$purpure: #984373ff;
-$lightGrey: #978a7aff;
-$darkGrey: #5b5754ff;
-$sable: #343434ff;
+$argent: #edededff;
+$gules: #bf3b2fff;
+$vert: #1f9b1fff;
+$Or: #f2e085ff;
+$azure: #2f2fbfff;
+$purpure: #832fbfff;
+$sable: #111111ff;
+
+$cultured: #edededff;
+$smoky-black: #111111ff;
+$international-orange-golden-gate-bridge: #bf3b2fff;
+$persian-blue: #2f2fbfff;
+$slimy-green: #1f9b1fff;
+$french-violet: #832fbfff;
+$flax: #f2e085ff;
 
 body {
   background: $argent url(/xv.png) fixed;
 }
 
-.App {
+App {
   text-align: center;
 }
 
@@ -32,71 +38,57 @@ body {
   color: $argent;
 }
 
-.App-link {
-  color: $azure;
-}
-
 .document {
-  padding: 2em;
+  padding: 2.5em 5em;
   background-color: $argent;
-  border: 2px solid $darkGrey;
+  border: 2px solid $sable;
 }
 
-.resources {
+%callout {
   background: inherit;
   color: $sable;
-  padding: 0.25rem 0rem;
-  margin-left: 2.25rem;
-  margin-bottom: 1rem;
+  padding: 0.25rem 0.5rem;
+  margin-left: -0.5rem;
   box-sizing: border-box;
   position: relative;
-  border-left: 0.125rem solid $azure;
+  border-left: 0.125rem solid;
   border-top: none;
   border-right: none;
   border-bottom: none;
 }
 
-.resources>ul {
-  margin-bottom: 0rem;
-}
-
-.resources:before {
+%icon {
   position: absolute;
   top: 0px;
   left: -3.25rem;
   font-weight: normal;
   font-size: 2rem;
-  padding-right: 1rem;
   font-family: "Font Awesome 5 Free";
   font-size: 2rem; /* Preferred icon size */
+}
+
+.resources {
+  @extend %callout;
+  border-left-color: $azure;
+}
+
+.resources:before {
+  @extend %icon;
   content: "\f518";
   color: $azure;
 }
 
 .tip {
-  background: inherit;
-  color: $sable;
-  padding: 0.25rem 0rem;
-  margin-left: 2.25rem;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-  position: relative;
-  border-left: 0.125rem solid $vert;
-}
-
-.tip>ul {
-  margin-bottom: 0rem;
+  @extend %callout;
+  border-left-color: $vert;
 }
 
 .tip:before {
-  position: absolute;
-  top: 0px;
-  left: -3.25rem;
-  font-weight: normal;
-  font-size: 2rem;
-  padding-right: 1rem;
-  font-family: "Font Awesome 5 Free";
-  font-size: 2rem; /* Preferred icon size */
+  @extend %icon;
   content: "\f058";
   color: $vert;
+}
+
+.tip ul, .resources ul {
+  margin-bottom: 0rem;
 }
