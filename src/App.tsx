@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container'
 import Paths from './Paths';
 import MenuBar from './MenuBar';
 import Document from './Document'
+import DocumentList from './DocumentList'
 import logo from './black-lion-seal-red-trumpets.png';
 
 import '@fortawesome/fontawesome-free/css/solid.css';
@@ -23,8 +24,8 @@ function App() {
         <Switch>
           <Route exact path={Paths.HOME} component={Home} />
           <Route path={Paths.ABOUT} component={About} />
+          <Route exact path={Paths.DOCUMENTS} component={DocumentList} />
           <Route exact path={[
-            Paths.DOCUMENTS, 
             Paths.DOCUMENTS + '/:filename',
             Paths.DOCUMENTS + '/:section/:filename',
             ]} component={Document} />
