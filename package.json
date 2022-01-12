@@ -18,7 +18,7 @@
     "@types/react-router-bootstrap": "^0.24.5",
     "@types/react-router-dom": "^5.1.5",
     "csv-parse": "^4.10.1",
-    "markdown-it": "^11.0.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-div": "^1.1.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
